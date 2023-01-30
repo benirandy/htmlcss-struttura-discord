@@ -39,8 +39,20 @@
     background-color: pink;
 }
 
-.debug .full.column {
+.debug .full-column {
     background-color: green;
+}
+
+.debug .footer-top {
+    height: 400px;
+}
+
+.debug .main-column {
+    background-color: pink;
+}
+
+.debug .menu-column {
+    background-color: aqua;
 }
 
 .debug .footer-bottom {
@@ -123,7 +135,7 @@ main .section {
 
 .section-container {
     max-width: 1170px;
-
+    padding: 20px 0px;
     display: flex;
     margin: 50px auto;
 }
@@ -140,18 +152,27 @@ main .section {
     background-color: grey;
 }
 
-.full .column {
+.full-column {
     width: 100%;
     color: green;
+    padding: 20px 0px;
 }
 
 footer {
-    background-color: darkgrey
+    background-color: black
 }
 
 .footer-top {
-    max-width: 1170px;
-    margin: auto;
+
+    display: flex;
+}
+
+.footer-top .main-column {
+    width: 30%;
+}
+
+.footer-top .menu-column {
+    width: 70%;
 }
 
 .footer-bottom {
@@ -164,4 +185,13 @@ footer {
 .footer-container {
     max-width: 1170px;
     margin: auto;
+}
+
+.menu-column {
+    display: flex;
+
+}
+
+.menu-column>div {
+    width: calc(100%/4);
 }
